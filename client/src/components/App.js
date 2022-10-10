@@ -1,10 +1,11 @@
 import React from "react";
+import Enrolled from "./Enrolled";
 
 function App() {
 
   return (
     <div>
-      <p className="text-green-400">Project</p>
+      <Enrolled/>
     </div>
   )
 }
