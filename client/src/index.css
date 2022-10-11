@@ -27,3 +27,37 @@
 .one-fetched-course-div img {
     width: 100%;
 }
+.signup-form-div-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    width: 60%;
+    height: 40vw;
+    background-color: #40b551;
+    padding: 3vw 5vw;
+}
+
+.signup-form input{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.signup-form input:focus{
+    outline: none;
+}
+
+.signup-form-btn{
+    border-radius: 5px;
+    height: 50px;
+    color: white;
+    background-color: #f17425;
+}
