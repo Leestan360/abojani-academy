@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 
 function SideBar() {
   return (
-    <div className="fixed">
+    <div className="pt-16 fixed">
       <div className="flex flex-col h-screen p-3 bg-white shadow w-72 pt-20 pl-12" style={{ backgroundColor: "rgb(109, 199, 122)" }}>
         <div className="space-y-3 ">
           <div className="flex-1 pt-12">
-            <ul className="pt-2 pb-10 space-y-1 text-sm text-white">
+            <ul className="pt-2 pb-10 space-y-1 text-white">
               <li className="">
                 <NavLink
                   to="/"
@@ -27,7 +27,7 @@ function SideBar() {
                       d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                     />
                   </svg>
-                  <span>Home</span>
+                  <span className="text-2xl">Home</span>
                 </NavLink>
               </li>
               <li className="rounded-sm">
@@ -49,13 +49,13 @@ function SideBar() {
                       d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
                     />
                   </svg>
-                  <span>Courses</span>
+                  <span className="text-2xl">Courses</span>
                 </NavLink>
               </li>
               <li className="">
                 <NavLink
                   to="/communities"
-                  className="flex items-center p-2 space-x-3 text-xl"
+                  className="flex items-center p-2 space-x-3 text-xl mb-8"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,13 +71,13 @@ function SideBar() {
                       d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
                     />
                   </svg>
-                  <span>Communities</span>
+                  <span className="text-2xl">Communities</span>
                 </NavLink>
               </li>
               <li className="">
                 <NavLink
                   to="/profile"
-                  className="flex items-center p-2 space-x-3 text-xl"
+                  className="flex items-center p-2 pt-4 space-x-3 text-xl border-t-2 border-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ function SideBar() {
                       d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <span>Profile</span>
+                  <span className="text-2xl">Profile</span>
                 </NavLink>
               </li>
               <li className="">
@@ -125,7 +125,7 @@ function SideBar() {
                       d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  <span>Settings</span>
+                  <span className="text-2xl">Settings</span>
                 </NavLink>
               </li>
             </ul>

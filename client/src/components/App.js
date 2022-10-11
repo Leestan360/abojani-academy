@@ -20,7 +20,9 @@ function App() {
   return (
     <div>
       <NavBar />
+      <div>
       <SideBar />
+      </div>
     </div>
   )
 }

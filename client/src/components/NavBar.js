@@ -2,7 +2,7 @@ import React from "react";
 
 function NavBar() {
   return (
-    <div className="flex justify-between h-16 top-0" style={{ boxShadow: "0px 4px 9px 4px rgba(0, 0, 0, 0.25)"}}>
+    <div className="flex justify-between h-16 w-screen fixed" style={{ boxShadow: "0px 4px 9px 4px rgba(0, 0, 0, 0.25)"}}>
       <h3 className="ml-8 my-auto">
         <span
           style={{
