@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Login from "./Login";
+import NavBar from "./NavBar";
+import SideBar from "./SideBar";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -14,10 +16,11 @@ function App() {
   }, []);
 
 
-  if (!user) return <Login onLogin={setUser} />;
+  // if (!user) return <Login onLogin={setUser} />;
   return (
     <div>
-      <Login />
+      <NavBar />
+      <SideBar />
     </div>
   )
 }
