@@ -88,6 +88,7 @@ function SignupForm() {
           {/* {errors.map((err) => (
             <Error key={err}>{err}</Error>
           ))} */}
+          <p className="text-center mt-8 text-[#fff]">Already have an account? Login</p>
          </form>
       </div>
 
