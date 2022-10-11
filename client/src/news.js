@@ -19,7 +19,14 @@ const news = [
         newsletter: "Kenya Debt",
         header: "Laikipia County KSh 1.16B Bond Get Cabinet Nod",
         time: "Today 11:20"
-    }
+    },
+    {
+        id: 4,
+        image: "https://elvis-munene.github.io/Abojani-Academy-web-app/assets/images/cb.png",
+        newsletter: "Central Bank",
+        header: "Central Bank Warns Digital Lenders On Licensing Deadline",
+        time: "Today 11:20"
+    },
 ]
 
 export default news
