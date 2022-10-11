@@ -1,5 +1,7 @@
 import React from "react";
+import Community from "./Community";
 import Home from "./Home"
+import Profile from "./Profile";
 import SignupForm from "./signupForm";
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
     <div>
       <Home/>
       <SignupForm/>
+      <Community/>
+      <Profile/>
     </div>
   )
 }
