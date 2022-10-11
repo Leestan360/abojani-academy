@@ -1,11 +1,11 @@
 import React from "react";
-import Enrolled from "./Enrolled";
+import EnrolledCourse from "./EnrolledCourse";
 
 function App() {
 
   return (
     <div>
-      <Enrolled/>
+      <EnrolledCourse/>
     </div>
   )
 }

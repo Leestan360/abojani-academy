@@ -7,7 +7,7 @@
 
 
 
-  function Enrolled() {
+  function EnrolledCourse() {
     return (
       <>
       <nav className='sticky top-0 shadow-sm bg-slate-50 shadow-slate-400 w-full mb-8'>
@@ -28,7 +28,7 @@
        </div>
         </nav>
 
-      <main className='mt-32 ml-9'>
+      <main className='mt-8 ml-9'>
       <div className='mr-32 w-80 h-fit'>
        <div className='w-full'>
         <div className='flex justify-between p-4'>
@@ -47,7 +47,7 @@
 
         </div>
 
-        <div className='bg-slate-200 ml-60 mt-5 w-85 rounded-lg h-fit mt-8'>
+        <div className='bg-slate-200 ml-60 mt-5 w-85 rounded-lg h-fit '>
 
         <div className="flex justify-around w-50 m-4 px-8  ">
 
@@ -122,4 +122,4 @@
     )
   }
   
-  export default Enrolled
+  export default EnrolledCourse
