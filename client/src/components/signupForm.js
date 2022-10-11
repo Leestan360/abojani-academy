@@ -36,7 +36,7 @@ function SignupForm() {
     <div className="h-full w-full flex signup-form-div-one">
 
       <div className="w-2/4" >
-        <img w-full src={pic2} alt="" />
+        <img src={pic2} alt="" />
       </div>
 
       <div className="signup-form-div-two w-2/4">
