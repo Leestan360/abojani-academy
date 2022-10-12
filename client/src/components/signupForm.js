@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import pic2 from "./images/main-image-signup.png"
 
 function SignupForm({ onLogin }) {
+  const navigate = useNavigate()
+
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -27,6 +29,7 @@ function SignupForm({ onLogin }) {
     .then((r) => {
       if (r.ok) {
         r.json().then((user) => onLogin(user));
+        navigate("/home");
       } else {
         r.json().then((err) => setErrors(err.errors));
       }
