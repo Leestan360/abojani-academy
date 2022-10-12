@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import pic2 from "./images/main-image-signup.png"
 
-function SignupForm() {
+function SignupForm({ onLogin }) {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
-  // const [errors, setErrors] = useState([]);
+  const [errors, setErrors] = useState([]);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -23,13 +24,13 @@ function SignupForm() {
         password_confirmation: passwordConfirmation,
       }),
     })
-    // .then((r) => {
-    //   if (r.ok) {
-    //     r.json().then((user) => onLogin(user));
-    //   } else {
-    //     r.json().then((err) => setErrors(err.errors));
-    //   }
-    // });
+    .then((r) => {
+      if (r.ok) {
+        r.json().then((user) => onLogin(user));
+      } else {
+        r.json().then((err) => setErrors(err.errors));
+      }
+    });
   }
 
   return (
@@ -41,6 +42,9 @@ function SignupForm() {
 
       <div className="signup-form-div-two w-2/4">
         <form onSubmit={handleSubmit} className="signup-form">
+        {errors.map((err) => (
+            <p key={err}>{err}</p>
+          ))}
           <div >
             <input
               placeholder="Username"
@@ -84,11 +88,7 @@ function SignupForm() {
           </div>
           
           <button className="signup-form-btn" type="submit">Signup</button>
-            
-          {/* {errors.map((err) => (
-            <Error key={err}>{err}</Error>
-          ))} */}
-          <p className="text-center mt-8 text-[#fff]">Already have an account? Login</p>
+          <p className="text-center mt-8 text-[#fff]">Already have an account? <NavLink to="/login">Login</NavLink></p>
          </form>
       </div>
 

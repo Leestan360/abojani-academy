@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Login({ onLogin }) {
+  const navigate = useNavigate()
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -27,6 +29,7 @@ function Login({ onLogin }) {
       setIsLoading(false);
       if (r.ok) {
         r.json().then((user) => onLogin(user));
+        navigate("/home");
       } else {
         r.json().then((err) => setErrors(err.errors));
       }
@@ -106,7 +109,7 @@ function Login({ onLogin }) {
             </button>
           </form>
           <p className="text-white text-xl">
-            Need an account? <button>Sign up</button>
+            Need an account? <NavLink to="/signup">Sign up</NavLink>
           </p>
         </div>
       </div>
