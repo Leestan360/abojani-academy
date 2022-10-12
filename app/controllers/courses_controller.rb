@@ -1,5 +1,7 @@
 class CoursesController < ApplicationController
 
+  skip_before_action :authorize, only: :create
+
   def index
     courses = Course.all
     render json: courses, status: :ok

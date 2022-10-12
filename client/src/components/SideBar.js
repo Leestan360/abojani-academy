@@ -4,7 +4,10 @@ import { NavLink } from "react-router-dom";
 function SideBar() {
   return (
     <div className="pt-16 fixed">
-      <div className="flex flex-col h-screen p-3 bg-white shadow w-72 pt-20 pl-12" style={{ backgroundColor: "rgb(109, 199, 122)" }}>
+      <div
+        className="flex flex-col h-screen p-3 bg-white shadow w-72 pt-20 pl-12"
+        style={{ backgroundColor: "rgb(109, 199, 122)" }}
+      >
         <div className="space-y-3 ">
           <div className="flex-1 pt-12">
             <ul className="pt-2 pb-10 space-y-1 text-white">

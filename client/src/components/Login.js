@@ -36,7 +36,7 @@ function Login({ onLogin }) {
   return (
     <div className="flex h-screen w-screen">
       <div className="w-1/2"></div>
-      <div className="pl-44" style={{ width: "498px"}}>
+      <div className="pl-44" style={{ width: "498px" }}>
         <h3 className="mt-20 mb-8">
           <span
             style={{
