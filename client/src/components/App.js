@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div >
-      {/* <p className="text-green-500">Project</p> */}
+      <p className="text-green-400">Project</p>
       <WelcomeScreen />
      
     </div>
