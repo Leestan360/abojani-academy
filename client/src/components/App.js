@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div>
-      <ConfirmPurchase/>
+      <Purchased/>
     </div>
   )
 }
