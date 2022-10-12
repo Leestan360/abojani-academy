@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 function Courses() {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/courses")
+    fetch("/courses")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
@@ -36,7 +36,7 @@ function Courses() {
       <div className="flex mb-10">
         <iframe
           className="rounded-lg w-96 mr-10 "
-          src={first.video}
+          // src={first.video}
           title="Ruger - Girlfriend (Official Video)"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
