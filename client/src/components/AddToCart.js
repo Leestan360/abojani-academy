@@ -1,5 +1,4 @@
 import {BsLock,BsPlayCircle}from  'react-icons/bs';
-import Header from './Header';
 
 
 
@@ -7,7 +6,7 @@ import Header from './Header';
 function AddToCart(){
   return (
     <>
- <Header/>
+ 
 
   <main className="mt-8 font-serif">
             <div className="mr-8 w-11/12 h-fit">

@@ -2,7 +2,7 @@ import {BsCart2,BsBell}from  'react-icons/bs';
 import {FaUser}from  'react-icons/fa';
 import { Link} from "react-router-dom";
 
-function Header() {
+function MyHeader() {
   return (
     <>
   <nav className='sticky top-0 shadow-sm bg-slate-50 shadow-slate-400 w-full mb-8 font-serif'>
@@ -27,4 +27,4 @@ function Header() {
   )
 }
 
-export default Header
+export default MyHeader
