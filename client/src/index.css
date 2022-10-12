@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+.picture-price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40vh;
+  }
+
+
+
+  
+
+  
