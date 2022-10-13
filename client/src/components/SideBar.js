@@ -13,7 +13,7 @@ function SideBar() {
             <ul className="pt-2 pb-10 space-y-1 text-white">
               <li className="">
                 <NavLink
-                  to="/"
+                  to="/home"
                   className="flex items-center p-2 space-x-3 text-xl"
                 >
                   <svg
