@@ -8,7 +8,7 @@ function Courses() {
       .then((data) => setCourses(data));
   }, []);
 
-  let first = courses[Object.keys(courses)[3]];
+  // let first = courses[Object.keys(courses)[3]];
 
   const eachCourse = courses.map((course, index) => {
     return (
@@ -32,14 +32,14 @@ function Courses() {
     <div className="ml-10">
       <h2 className="font-bold text-2xl pb-5 mt-6">Enrolled Course</h2>
       <div className="flex mb-10">
-        <img src={first.image_url} alt="Abojani" />
+        <img src={courses[0].image_url} alt="Abojani" />
 
         <div className="w-96">
-          <h3 className="font-bold text-xl">{first.title}</h3>
+          <h3 className="font-bold text-xl">{courses[0].title}</h3>
           {/* <p>{first.description}</p> */}
           <br />
           <h5 className="font-bold text-lg">Instructors</h5>
-          <p>{first.instructors}</p>
+          <p>{courses[0].instructors}</p>
           <br></br>
           <h4 className="font-bold">Enrolled students</h4>
           <p>10k +</p>
