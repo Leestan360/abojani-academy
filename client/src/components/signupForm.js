@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import pic2 from "./images/main-image-signup.png"
+import pic2 from "./images/main-image-signup.png";
 
 function SignupForm({ onLogin }) {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -25,8 +25,7 @@ function SignupForm({ onLogin }) {
         password,
         password_confirmation: passwordConfirmation,
       }),
-    })
-    .then((r) => {
+    }).then((r) => {
       if (r.ok) {
         r.json().then((user) => onLogin(user));
         navigate("/home");
@@ -38,17 +37,16 @@ function SignupForm({ onLogin }) {
 
   return (
     <div className="h-full w-full flex signup-form-div-one">
-
-      <div className="w-2/4" >
-        <img src={pic2} alt="" />
+      <div className="w-2/4">
+        <img className="w-screen h-screen" src={pic2} alt="abojani" />
       </div>
 
       <div className="signup-form-div-two w-2/4">
         <form onSubmit={handleSubmit} className="signup-form">
-        {errors.map((err) => (
+          {errors.map((err) => (
             <p key={err}>{err}</p>
           ))}
-          <div >
+          <div>
             <input
               placeholder="Username"
               type="text"
@@ -89,15 +87,17 @@ function SignupForm({ onLogin }) {
               autoComplete="current-password"
             />
           </div>
-          
-          <button className="signup-form-btn" type="submit">Signup</button>
-          <p className="text-center mt-8 text-[#fff]">Already have an account? <NavLink to="/login">Login</NavLink></p>
-         </form>
-      </div>
 
+          <button className="signup-form-btn" type="submit">
+            Signup
+          </button>
+          <p className="text-center mt-8 text-[#fff]">
+            Already have an account? <NavLink to="/login">Login</NavLink>
+          </p>
+        </form>
+      </div>
     </div>
-    
   );
 }
-  
+
 export default SignupForm;

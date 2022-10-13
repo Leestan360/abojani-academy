@@ -4,6 +4,7 @@ import Home from "./Home";
 import HomeNavSide from "./HomeNavSide";
 import Login from "./Login";
 import NavBar from "./NavBar";
+import Profile from "./Profile";
 import SideBar from "./SideBar";
 import SignupForm from "./signupForm";
 import WelcomeScreen from "./welcomeScreen";
@@ -22,17 +23,13 @@ function App() {
   // if (!user) return <Login onLogin={setUser} />;
   return (
     <div>
-      <Routes>
-        <Route exact path="/" element={<WelcomeScreen />} />
-        if (!user) return{" "}
-        <Route exact path="/login" element={<Login onLogin={setUser} />} />
-        <Route
-          exact
-          path="/signup"
-          element={<SignupForm onLogin={setUser} />}
-        />
-      </Routes>
-      <HomeNavSide />
+    <Routes>
+      <Route exact path="/" element={<WelcomeScreen />} />
+      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/signup" element={<SignupForm onLogin={setUser}/>} />
+      <Route exact path="/profile" element={<Profile />} />
+    </Routes>
+    <HomeNavSide user={user}/>
     </div>
   );
 }

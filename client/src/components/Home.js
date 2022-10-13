@@ -5,8 +5,8 @@ import { HiOutlineStar } from "react-icons/hi";
 
 function Home() {
   return (
-    <div className="w-full py-8 pl-8 pr-32">
-      <img className="w-full rounded-md" src={pic1} alt="" />
+    <div className="w-3/4 pt-24 ml-80">
+        <img className="w-full rounded-md" src={pic1} alt="" />
 
       <div>
         <h2 className="text-2xl font-medium my-4">

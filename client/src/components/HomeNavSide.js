@@ -7,10 +7,10 @@ import NavBar from "./NavBar";
 import Profile from "./Profile";
 import SideBar from "./SideBar";
 
-function HomeNavSide() {
+function HomeNavSide({user}) {
   return (
     <div>
-      <NavBar />
+      <NavBar user={user}/>
       <div>
         <SideBar />
         <Routes>
