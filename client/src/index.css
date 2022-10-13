@@ -1,3 +1,97 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.community-topics-div{
+    display: flex;
+    justify-content: space-between;
+}
+.news-image {
+    width: 100%
+}
+
+.fetched-div, .stock-recommendations{
+    box-shadow: 0px 4px 7px 1px #00000040;
+}
+
+
+.courses-images-div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.one-fetched-course-div{
+    width: 24%;
+}
+
+.one-fetched-course-div img {
+    width: 100%;
+}
+.signup-form-div-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    width: 56%;
+    height: 76vh;
+    background-color: #40b551;
+    padding: 2vw 4vw;
+}
+
+.signup-form input{
+    width: 100%;
+    margin-bottom: 16px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(241, 116, 37);
+    box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.25)
+}
+.signup-form input:focus{
+    outline: none;
+}
+
+.signup-form-btn{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: white;
+    background-color: #f17425;
+}
+
+.community{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 4vw;
+}
+.community-sections-div{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home{
+    margin-left: 200px;
+    padding-top: 100px;
+    width: 800px;
+}
+/* #sidebar{
+    width: 250px;
+} */
+/* #list{
+    padding: 20px;
+} */

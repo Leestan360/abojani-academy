@@ -1,9 +1,9 @@
 import React from "react";
 
-function NavBar() {
+function NavBar({user}) {
   return (
     <div
-      className="flex justify-between h-16 w-screen fixed"
+      className="flex justify-between h-16 w-screen fixed bg-white"
       style={{ boxShadow: "0px 4px 9px 4px rgba(0, 0, 0, 0.25)" }}
     >
       <h3 className="ml-8 my-auto">
@@ -33,7 +33,7 @@ function NavBar() {
       <div className="flex text-xl">
         <p className="mx-4 my-auto">Cart</p>
         <p className="mx-4 my-auto">Notifications</p>
-        <p className="mr-24 ml-4 my-auto">User</p>
+        <p className="mr-24 ml-4 my-auto">{}</p>
       </div>
     </div>
   );

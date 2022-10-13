@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Login({ onLogin }) {
+  const navigate = useNavigate();
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -27,6 +30,7 @@ function Login({ onLogin }) {
       setIsLoading(false);
       if (r.ok) {
         r.json().then((user) => onLogin(user));
+        navigate("/home");
       } else {
         r.json().then((err) => setErrors(err.errors));
       }
@@ -35,7 +39,13 @@ function Login({ onLogin }) {
 
   return (
     <div className="flex h-screen w-screen">
-      <div className="w-1/2"></div>
+      <div className="w-1/2">
+        <img
+        className="h-screen w-full"
+          src="https://github.com/Elvis-Munene/Abojani-Academy-web-app/blob/main-page/assets/images/main-image-signup.png?raw=true"
+          alt=""
+        />
+      </div>
       <div className="pl-44" style={{ width: "498px" }}>
         <h3 className="mt-20 mb-8">
           <span
@@ -106,7 +116,7 @@ function Login({ onLogin }) {
             </button>
           </form>
           <p className="text-white text-xl">
-            Need an account? <button>Sign up</button>
+            Need an account? <NavLink to="/signup">Sign up</NavLink>
           </p>
         </div>
       </div>
