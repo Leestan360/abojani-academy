@@ -22,12 +22,17 @@ function App() {
   // if (!user) return <Login onLogin={setUser} />;
   return (
     <div>
-    <Routes>
-      <Route exact path="/" element={<WelcomeScreen />} />
-      if (!user) return <Route exact path="/login" element={<Login onLogin={setUser} />} />
-      <Route exact path="/signup" element={<SignupForm onLogin={setUser}/>} />
-    </Routes>
-    <HomeNavSide />
+      <Routes>
+        <Route exact path="/" element={<WelcomeScreen />} />
+        if (!user) return{" "}
+        <Route exact path="/login" element={<Login onLogin={setUser} />} />
+        <Route
+          exact
+          path="/signup"
+          element={<SignupForm onLogin={setUser} />}
+        />
+      </Routes>
+      <HomeNavSide />
     </div>
   );
 }
