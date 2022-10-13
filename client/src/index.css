@@ -39,10 +39,10 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
-    width: 60%;
-    height: 80vh;
+    width: 56%;
+    height: 76vh;
     background-color: #40b551;
-    padding: 3vw 5vw;
+    padding: 2vw 4vw;
 }
 
 .signup-form input{
@@ -51,6 +51,8 @@
     height: 50px;
     padding: 20px;
     border-radius: 5px;
+    border: 1px solid rgb(241, 116, 37);
+    box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.25)
 }
 .signup-form input:focus{
     outline: none;

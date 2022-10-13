@@ -38,7 +38,7 @@ function SignupForm({ onLogin }) {
   return (
     <div className="h-full w-full flex signup-form-div-one">
       <div className="w-2/4">
-        <img src={pic2} alt="" />
+        <img className="w-screen h-screen" src={pic2} alt="abojani" />
       </div>
 
       <div className="signup-form-div-two w-2/4">
