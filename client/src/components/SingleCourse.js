@@ -2,15 +2,15 @@ import React from "react";
 
 function SingleCourse({ course }) {
   return (
-    <div className="ml-96 pt-8 bg-gray-100 w-1/3 rounded-xl">
-      <div className="py-2 ml-48 w-3/4">
+    <div className="ml-[350px] my-4 text-xl bg-gray-100 w-72 rounded-xl cursor-pointer">
+      <div className=" w-full">
         <img
-          className="w-1/2 rounded-lg mb-2.5"
+          className="w-full h-44 mb-3 rounded-xl"
           src={course.image_url}
           alt="Abojani"
         />
-        <h1 className="font-bold text-base">{course.title}</h1>
-        <p>{course.instructors}</p>
+        <h1 className="font-bold text-xl">{course.title}</h1>
+        <p >Instructors: <span className="text-xl">{course.instructors}</span></p>
         <p>Ksh. {course.price}</p>
       </div>
     </div>
