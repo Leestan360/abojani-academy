@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SingleCourse from "./SingleCourse";
 
 function Courses() {
+
   
   const [courses, setCourses] = useState([]);
   useEffect(() => {
@@ -9,6 +10,7 @@ function Courses() {
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
+
 
   return (
     <div>
