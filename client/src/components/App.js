@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import HomeNavSide from "./HomeNavSide";
 import Login from "./Login";
-import SignupForm from "./signupForm";
-import WelcomeScreen from "./welcomeScreen";
+import SignupForm from "./SignupForm";
+import WelcomeScreen from "./WelcomeScreen";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -24,7 +24,7 @@ function App() {
       <Route exact path="/login" element={<Login />} /> 
       <Route exact path="/signup" element={<SignupForm onLogin={setUser}/>} /> 
     </Routes>
-    <HomeNavSide user={user} setUser={setUser}/>
+    <HomeNavSide user={user} setUser={setUser} />
     </div>
   );
 }
