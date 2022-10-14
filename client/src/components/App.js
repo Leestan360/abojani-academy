@@ -21,8 +21,8 @@ function App() {
     <div>
     <Routes>
       <Route exact path="/" element={<WelcomeScreen />} />
-      <Route exact path="/login" element={<Login />} />
-      <Route exact path="/signup" element={<SignupForm onLogin={setUser}/>} />
+      <Route exact path="/login" element={<Login />} /> 
+      <Route exact path="/signup" element={<SignupForm onLogin={setUser}/>} /> 
     </Routes>
     <HomeNavSide user={user} setUser={setUser}/>
     </div>
