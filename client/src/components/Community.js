@@ -4,7 +4,7 @@ import { AiOutlineStop } from "react-icons/ai";
 function Community() {
 
     return (
-      <div className="community w-3/4 pt-32 ml-80">
+      <div className="community w-3/4 ml-80">
         <div className="community-sections-div">
             <h1 className="text-[#f17425] font-bold text-base mb-2">INNER CIRCLE</h1>
             <p className="text-2xl font-bold mb-4">KES 13,000</p>
