@@ -1,17 +1,9 @@
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { AiOutlineStop } from "react-icons/ai";
-import CommunityInformation from "./CommunityInformation.js";
-import { Link, Route, Routes, useNavigate } from "react-router-dom";
 
 function Community() {
-  let navigate = useNavigate();
-
-  function handleJoin() {
-    navigate("/communityinformation");
-  }
-
   return (
-    <div className="community w-3/4 pt-32 ml-80">
+    <div className="community w-3/4 ml-80">
       <div className="community-sections-div">
         <h1 className="text-[#f17425] font-bold text-base mb-2">
           INNER CIRCLE
@@ -55,11 +47,9 @@ function Community() {
             Investments Advice
           </p>
         </div>
-        <Link to="/communityinformation">
-          <button className="px-6 py-3 bg-[#f17425] rounded-md text-[#fff]">
-            Join Now
-          </button>
-        </Link>
+        <button className="px-6 py-3 bg-[#f17425] rounded-md text-[#fff]">
+          Join Now
+        </button>
       </div>
 
       <div className="community-sections-div">
@@ -153,13 +143,6 @@ function Community() {
           Join Now
         </button>
       </div>
-      <Routes>
-        <Route
-          exact
-          path="/communityinformation"
-          element={<CommunityInformation />}
-        />
-      </Routes>
     </div>
   );
 }
