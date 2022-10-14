@@ -7,6 +7,8 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 puts 'Seeding the database...'
+
+User.create!(username: "Stanley Mayore", email: "stanleymayore@gmail.com", password: "12345678", password_confirmation: "12345678")
 Course.create!(title: "Real Estate Masterclass", instructors: "James Omwami, Ivy Muthoni", price: 100000, image_url: "https://img.freepik.com/free-photo/construction-concept-with-engineering-tools_1150-17809.jpg?size=626&ext=jpg&uid=R49278779&ga=GA1.2.1858690084.1658745301" )
 Course.create!(title: "Financial Analysis", instructors: "Christine Njeri, Paul Gadot" , price: 79000, image_url: "https://img.freepik.com/free-photo/close-up-business-items_1098-1988.jpg?w=900&t=st=1665643019~exp=1665643619~hmac=829e8a563060523e5ff0d6712483d7dd41f4f2bf7a6f75457b5031782a8fa003" )
 Course.create!(title: "Investing Masterclass", instructors: "Ezekiel Mbuvi, Mary Anne", price: 20000, image_url: "https://img.freepik.com/free-photo/coin-wooden-table-blurred-nature_1150-17703.jpg?size=626&ext=jpg&uid=R49278779&ga=GA1.2.1858690084.1658745301" )
