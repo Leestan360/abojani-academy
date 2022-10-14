@@ -7,19 +7,22 @@ import Profile from "./Profile";
 import SideBar from "./SideBar";
 import Courses from "./Courses";
 
-function HomeNavSide({user, setUser}) {
+function HomeNavSide({ user, setUser }) {
   return (
     <div>
-      <NavBar user={user}/>
+      <NavBar user={user} />
       <div>
         <SideBar />
         <Routes>
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/courses" element={<Courses />} />
           <Route exact path="/communities" element={<Community />} />
-          <Route exact path="/profile" element={<Profile user={user} setUser={setUser}/>} />
+          <Route
+            exact
+            path="/profile"
+            element={<Profile user={user} setUser={setUser} />}
+          />
           {/* <Route exact path="/settings" element={< />} /> */}
-
         </Routes>
       </div>
     </div>
