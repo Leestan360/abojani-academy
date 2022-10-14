@@ -40,8 +40,13 @@ function NavBar({ user }) {
         <p className="mx-4 my-auto">
           <BsBell className="hover:text-orange-500 cursor-pointer" />
         </p>
-        <p className="mr-12 ml-4 my-auto flex items-center text-2xl">
-          <FaUser className="mr-1"/> {user.username}
+        <p
+          className="mr-12 ml-4 my-auto flex items-center text-2xl"
+          style={{
+            color: "rgb(241, 116, 37)",
+          }}
+        >
+          <FaUser className="mr-1" /> <span>{user.username}</span>
         </p>
       </div>
     </div>
