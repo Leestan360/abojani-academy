@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SingleCourse from "./SingleCourse";
 
 function Courses() {
+  
   const [courses, setCourses] = useState([]);
   useEffect(() => {
     fetch("/courses")
