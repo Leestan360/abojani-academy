@@ -2,6 +2,7 @@ import pic1 from "./images/image.png";
 import data from "../data";
 import news from "../news";
 import { HiOutlineStar } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -11,9 +12,9 @@ function Home() {
       <div>
         <h2 className="text-2xl font-medium my-4">
           Explore courses{" "}
-          <span className="float-right text-[20px] font-light underline">
+          <Link to="/courses" className="float-right text-[20px] font-light underline">
             see all
-          </span>
+          </Link>
         </h2>
         <div className="courses-images-div">
           {data.map((item) => (
